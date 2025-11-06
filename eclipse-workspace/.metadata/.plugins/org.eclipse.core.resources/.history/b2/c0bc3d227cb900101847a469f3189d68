@@ -1,0 +1,37 @@
+
+package clase;
+
+
+public class Clase_04_Noviembre {
+
+	public static void main(String[] args) {
+
+		System.out.println("Esto va en una línea\nY esto en la de abajo");
+		String nombre = "Alexandru";
+		String apellido = "Iacob";
+		int edad = 21;
+		double salario = 12345.568;
+		
+		System.out.printf("Tu nombre es %s %s tienes %d y cobras %.2f euros\n", nombre, apellido, edad, salario);
+		
+		System.out.println("Fin del programa");
+		
+		
+		int n1 =345;
+		int n2 =1245;
+		int n3 =2;
+		int n4 =32;
+		
+		System.out.printf("Ingresos:\n%5d€\n%5d€\n%5d€\n%5d€\n", n1,n2,n3,n4);
+		System.out.printf("Ingresos:\n%-5d€\n%-5d€\n%-5d€\n%-5d€\n", n1,n2,n3,n4);
+		System.out.printf("Ingresos:\n%05d€\n%05d€\n%05d€\n%05d€\n", n1,n2,n3,n4);
+		
+		double d1 = -345.12;
+		double d2 = 1245.1;
+		double d3 = 2.0;
+		double d4 = -32.3456;
+		
+		System.out.printf("Ingresos:\n%+9.3f€\n%+9.3f€\n%+9.3f€\n%+9.3f€\n", d1,d2,d3,d4);		
+	}
+
+}

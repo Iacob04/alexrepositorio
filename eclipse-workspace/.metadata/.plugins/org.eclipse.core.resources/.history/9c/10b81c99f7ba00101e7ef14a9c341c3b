@@ -1,0 +1,24 @@
+
+package clase;
+
+import java.util.Scanner;
+
+public class Dados {
+
+	public static void main(String[] args) {
+	
+			System.out.print("Introduce cuantos dados vas a tirar: ");
+			Scanner teclado = new Scanner(System.in);
+			int dados = teclado.nextInt();
+			int[] numeros = new int[dados];
+			
+			for(int i = 0; i<dados; i++) {
+				numeros[i] = (int)(Math.random() * 6)+1 ;
+			System.out.print(i);
+			if (i<dados-1)
+				System.out.print("-");
+			}
+
+	}
+
+}

@@ -1,0 +1,43 @@
+
+package examen;
+
+public class Ejercicio_1 {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Se han generado 4 claves con el siguiente formato ****-****-****-****-****");
+		int contador = 0;
+		while(contador != 4) {
+		for (int i = 0; i < 4 ; i++) {
+	            int num = (int)(Math.random() * 9)+1 ;
+	            System.out.print(num);
+	           
+		 } System.out.print("-");
+		for (int i = 0; i < 4 ; i++) {
+            int num = (int)(Math.random() * 9)+1 ;
+            System.out.print(num);
+            
+	 }System.out.print("-");
+		for (int i = 0; i < 4 ; i++) {
+            int num = (int)(Math.random() * 9)+1 ;
+            System.out.print(num);
+            
+	 }System.out.print("-");
+		for (int i = 0; i < 4 ; i++) {
+            int num = (int)(Math.random() * 9)+1;
+            System.out.print(num);
+            
+           
+	 }System.out.print("-");
+		for (int i = 0; i < 4 ; i++) {
+            int num = (int)(Math.random() * 9)+1 ;
+            System.out.print(num);
+          
+	 } System.out.println(" ");
+		contador ++;
+		
+		}
+	}
+
+}
