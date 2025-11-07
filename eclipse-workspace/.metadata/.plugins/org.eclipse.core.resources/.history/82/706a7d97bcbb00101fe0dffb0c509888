@@ -18,9 +18,7 @@ public class Dados {
 			do {
 				tiradas++;
 			for(int i = 0; i<dados; i++) {
-				numeros[i] = (int)(Math.random() * 7)+1 ;
-				if (numeros[i] == 7)
-					numeros[i] = 6;
+				numeros[i] = (int)(Math.random() * 6)+1 ;
 				
 				cantidadDados[numeros[i]]++;
 			System.out.print(numeros[i]);
@@ -38,7 +36,7 @@ public class Dados {
 			
 			for(int i = 1; i<7; i++) {
 				int porcentaje = 100*cantidadDados[i] /(tiradas*dados);
-				System.out.println(i+": "+ porcentaje + " % de las veces");
+				System.out.println(i+": "+ porcentaje + " % de las vecesl");
 			}
 			System.out.println("has necesitado " + tiradas + " tiradas para que salgan iguales");
 			

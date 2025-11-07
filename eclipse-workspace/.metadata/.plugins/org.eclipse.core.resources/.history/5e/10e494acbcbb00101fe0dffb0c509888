@@ -38,7 +38,7 @@ public class Dados {
 			
 			for(int i = 1; i<7; i++) {
 				int porcentaje = 100*cantidadDados[i] /(tiradas*dados);
-				System.out.println(i+": "+ porcentaje + " % de las veces");
+				System.out.println(i+": "+ porcentaje + " % de las vecesl");
 			}
 			System.out.println("has necesitado " + tiradas + " tiradas para que salgan iguales");
 			

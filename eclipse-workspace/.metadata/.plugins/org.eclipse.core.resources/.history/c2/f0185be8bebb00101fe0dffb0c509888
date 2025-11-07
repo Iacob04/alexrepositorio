@@ -3,7 +3,7 @@ package clase;
 
 import java.util.Scanner;
 
-public class Dados {
+public class Ejercicio_cuenta {
 
 	public static void main(String[] args) {
 	
