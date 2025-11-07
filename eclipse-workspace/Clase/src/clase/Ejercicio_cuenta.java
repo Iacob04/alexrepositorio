@@ -1,6 +1,7 @@
 
 package clase;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ejercicio_cuenta {
@@ -9,23 +10,42 @@ public class Ejercicio_cuenta {
 	
 			
 		Scanner teclado = new Scanner(System.in);
-		double importe = 0;
-		int personas = 0;
+		System.out.print("Introduce un número de 4 cifras: ");
+		int numero = teclado.nextInt();
+		String textoNum = String.valueOf(numero);
 		
-		try {
-		System.out.print("Cuanto ha costado la cena? : ");
-		importe = teclado.nextDouble();
-		//teclado.nextLine(); // para limpiar el buffer del teclado
-		System.out.print("Cuantos habeis cenado? : ");
-		personas = teclado.nextInt();
-		}catch(Exception e) {
-			System.out.println("Ha ocurrido un error ");
-		}finally {
-			if(importe != 0 && personas != 0) {
-				System.out.printf("Tocais a %.2f € por cabeza", importe/personas);
-				}
-				else
-					System.out.println("Ni el importe ni las personas pueden ser 0");
+		while(textoNum.length()>4) {
+			System.out.print("La cifra introducida no es correcta , vuelva a introducirla: ");
+			numero = teclado.nextInt();
+			textoNum = String.valueOf(numero);
+	}
+		
+		while(!textoNum.equals("6174") ) {
+			char cifras[] = new char [textoNum.length()];
+			
+			for(int i = 0; i<textoNum.length(); i++)
+				cifras[i] = textoNum.charAt(i);
+			
+			Arrays.sort(cifras);
+			
+			String textoAscendente = "";
+			for (int i = 0; i<cifras.length; i++)
+				textoAscendente += cifras[i];
+			
+			int numAscendente = Integer.parseInt(textoAscendente);
+			System.out.println(numAscendente);
+			
+			String textoDescendente = "";
+			for (int i =cifras.length-1; i>=0; i--)
+				textoDescendente += cifras[i];
+			
+			int numDescendente = Integer.parseInt(textoDescendente);
+			System.out.println(numDescendente);
+			
+			System.out.println(numDescendente + "-" + numAscendente + " = " + (numDescendente-numAscendente));
+			
+			textoNum = String.valueOf(numDescendente-numAscendente);
+			
 		}
 		
 		teclado.close();
