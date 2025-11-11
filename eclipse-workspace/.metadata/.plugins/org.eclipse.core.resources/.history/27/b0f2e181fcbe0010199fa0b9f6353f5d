@@ -94,12 +94,10 @@ public class Ejercicio_cuenta {
 							descendente = vector[i] + descendente;
 							
 						}
-						//System.out.println("Ascendente = " + ascendente);
-						//System.out.println("Descendente = " + descendente);
+						System.out.println("Ascendente = " + ascendente);
+						System.out.println("Descendente = " + descendente);
 						entrada = Integer.parseInt(descendente)-Integer.parseInt(ascendente);
 						numTxt = Integer.toString(entrada);
-						for(int i = numTxt.length(); i<4; i++)
-							numTxt = "0" + numTxt;
 						System.out.println(descendente + " - " + ascendente + " = " + entrada);
 					}
 				}
