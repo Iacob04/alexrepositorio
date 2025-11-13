@@ -1,8 +1,9 @@
 
 package clase;
 
+import java.util.Scanner;
 
-public class Clase_04_Noviembre {
+public class Clase_13_Noviembre {
 
 	public static void main(String[] args) {
 
@@ -31,7 +32,22 @@ public class Clase_04_Noviembre {
 		double d3 = 2.0;
 		double d4 = -32.3456;
 		
-		System.out.printf("Ingresos:\n%9.3f€\n%9.3f€\n%9.3f€\n%9.3f€\n", d1,d2,d3,d4);		
+		System.err.printf("Ingresos:\n%+(9.3f€\n%+9.3f€\n%+9.3f€\n%+9.3f€\n", d1,d2,d3,d4);		
+		
+		
+		double pi = 3.141593653;
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("¿Cuantas cifras totales quieres que tenga?");
+		int cifras = teclado.nextInt();
+		System.out.print("¿Cuantas cifras decimales quieres que tenga?");
+		int decimales = teclado.nextInt();
+		
+		String formato = "%" +cifras+ "."+decimales+"f";
+		
+		System.out.println(pi);
+		System.out.printf(formato, pi);
+		teclado.close();
+		
 	}
 
 }

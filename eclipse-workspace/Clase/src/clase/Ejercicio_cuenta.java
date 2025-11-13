@@ -101,7 +101,9 @@ public class Ejercicio_cuenta {
 						for(int i = numTxt.length(); i<4; i++)
 							numTxt = "0" + numTxt;
 						System.out.println(descendente + " - " + ascendente + " = " + entrada);
+						
 					}
+						System.out.println("Has hecho " + contador + " operaciones para llegar al número de kaprekar");
 				}
 				
 			}
@@ -110,6 +112,7 @@ public class Ejercicio_cuenta {
 		}
 			
 		}
+		
 
 	}
 

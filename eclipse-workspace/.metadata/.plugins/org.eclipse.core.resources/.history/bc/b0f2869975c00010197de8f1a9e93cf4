@@ -1,0 +1,17 @@
+
+package clase;
+
+import java.util.Scanner;
+
+public class Clase_13_Noviembre {
+
+	public static void main(String[] args) {
+		muestraNumero (5);
+		int n=6;
+		muestraNumero(n);
+	}
+	public static void muestraNumero (int numero) {
+		 System.out.println((numero));
+	}
+
+}
