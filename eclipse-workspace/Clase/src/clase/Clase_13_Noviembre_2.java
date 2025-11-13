@@ -19,7 +19,7 @@ public class Clase_13_Noviembre_2 {
 		
 		boolean primo = true;
 		int raiz = (int)Math.sqrt(numero)+1;
-		if (numero%2 != 0) {
+		if (numero%2 != 0 || numero == 2) {
 			for(int i = 3; i<raiz && primo == true; i += 2)
 				if(numero%i == 0)
 					primo = false;

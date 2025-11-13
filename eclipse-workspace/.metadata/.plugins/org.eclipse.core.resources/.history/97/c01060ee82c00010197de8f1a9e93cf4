@@ -1,0 +1,48 @@
+
+package clase;
+
+import java.util.Scanner;
+
+public class kapekar {
+
+	public static void main(String[] args) {
+
+		String texto;
+		System.out.println("Escribe tu texto");
+		Scanner teclado = new Scanner(System.in);
+		texto = teclado.nextLine();
+		System.out.println("Escribe un caracter: ");
+		String temporal =teclado.nextLine();
+		char caracter = temporal.charAt(0);
+		
+		int contador = 0;
+		
+		for ( int i=0; i<texto.length(); i++)
+		
+			if (texto.charAt(i) == caracter)
+				contador++;
+			System.out.println("El caracter " + caracter + " aparece en " + contador + " ocasiones");
+			if (contador != 0) {
+			System.out.println("Las posiciones en las que aparece son: ");
+			
+			int contadorPosiciones = 0;
+			for(int i = 0; i<texto.length(); i++) {
+				
+				if(texto.charAt(i) == caracter) {
+					contadorPosiciones++;
+					System.out.print(i );
+					if (contadorPosiciones != contador)
+						System.out.print(", ");
+				}
+				}
+			}
+			
+		
+		
+		teclado.close();
+		
+		
+
+	}
+
+}
