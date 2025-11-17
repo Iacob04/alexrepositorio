@@ -1,0 +1,21 @@
+
+package clase;
+
+import java.util.Scanner;
+
+public class Clase_13_Noviembre_3 {
+
+	public static void main(String[] args) {
+		// ejercicio 7 boletín 7
+		 Scanner teclado = new Scanner(System.in);
+		 System.out.print("Escribe una frase: ");
+		 String entrada = teclado.nextLine();
+		 String[]lista = entrada.split(" ");
+		 for(String palabra:lista)
+			 System.out.println(palabra);
+		
+		 
+		 
+	}
+
+}
