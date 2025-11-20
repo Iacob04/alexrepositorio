@@ -1,0 +1,51 @@
+
+package clase;
+
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Ejercicio2_boletin8 {
+
+
+	public static void main(String[] args) {
+	
+		 Scanner teclado = new Scanner(System.in);
+		 System.out.print("Introduce una contraseña: ");
+		 String contraseña = teclado.next();
+		 String patronNumeros = "[0-9]";
+		 
+		 while (longitud(contraseña) == false && mayusculas(contraseña)== false){
+			 
+			 System.out.println("La contraseña es muy corta o demasiado largo, debe tener como mínimo 8 caracteres y como máximo 20");
+			 System.out.print("Vuelva a intentarlo: ");
+			 contraseña = teclado.next();
+		 }
+		  		 
+		 
+		 
+		 
+		 
+		 
+		 teclado.close();
+		 
+	}
+
+	static boolean longitud (String contraseña) {
+		boolean si = true;
+		if
+		(contraseña.length()<8 || contraseña.length()>20)
+		si = false;	
+		return si;
+	}
+
+
+	static boolean mayusculas (String contraseña) {
+		boolean si = true;
+		Pattern mayusculas = Pattern.compile("[A-ZÑ]");
+		Matcher mayusculasOK = mayusculas.matcher(contraseña);
+		si = false;	
+		return si;
+	}
+	
+}

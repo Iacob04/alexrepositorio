@@ -1,0 +1,40 @@
+
+package clase;
+
+import java.util.Scanner;
+
+public class Clase_18_Noviembre {
+
+	public static void main(String[] args) {
+		// ejercicio 7 boletín 7
+		 Scanner teclado = new Scanner(System.in);
+		 System.out.print("De que tamaño sera tu array: ");
+		 try {
+			 int num = teclado.nextInt();
+			 int tabla[] = new int[num];
+			 for (int i = 0; i<num; i++) {
+				 tabla[i] = (int)((Math.random()+(1000-9))+10);
+			 }			 
+			 for(int i = 0; i<num; i++) {
+				 System.out.print(tabla[i] + " - ");
+			 }
+			 System.out.println();
+			 System.out.println("Que posición quieres recuperar ? : ");
+			 int posicion = teclado.nextInt();
+			 if(posicion <0 || posicion>= num)
+				 System.out.println("Esa posición no existe");
+			 	
+			 else 
+				 System.out.println("Posición " + posicion + " : " + tabla[posicion]);
+			 
+		 }catch (Exception e) {
+			System.out.println("El número que has introducido no es un entero positivo");
+			
+		 }finally {
+			 teclado.close();
+		 }
+		 
+		 
+	}
+
+}
