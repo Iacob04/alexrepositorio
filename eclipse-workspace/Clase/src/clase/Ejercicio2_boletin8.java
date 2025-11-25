@@ -58,7 +58,7 @@ public class Ejercicio2_boletin8 {
 
 	static boolean caracteres(String contraseña) {
 		boolean si = true;
-		Pattern caracteres = Pattern.compile("[_-!?*]");
+		Pattern caracteres = Pattern.compile("[-_!?*]");
 		Matcher caracteresOK = caracteres.matcher(contraseña);
 		si = false;
 		return (caracteresOK.find());

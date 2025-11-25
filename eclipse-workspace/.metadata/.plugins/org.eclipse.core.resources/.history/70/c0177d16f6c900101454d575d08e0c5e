@@ -1,0 +1,30 @@
+
+package clase;
+import java.util.Scanner;
+public class Ejercicio_3_boletin_8 {
+
+	public static void main(String[] args) {
+		System.out.print("Introduce una cadena para realizar un cifrado: ");
+		Scanner teclado = new Scanner(System.in);
+		String cadena = teclado.next();
+		String cifrado = "";
+		
+		int i = 0;
+		int j = cadena.length()-1;		
+		do {
+			cifrado += cadena.charAt(j);
+			cifrado += cadena.charAt(i);
+			
+			
+		
+			
+			i++;
+			j--;
+			
+		}while(i<j);
+		
+		System.out.println(cifrado);
+
+	}
+
+}

@@ -1,0 +1,32 @@
+
+package clase;
+
+import java.util.Scanner;
+
+public class Clase_21_Noviembre {
+
+	public static void main(String[] args) {
+		muestraNumero (5);
+		int n=6;
+		muestraNumero(n);
+		System.out.println(creaLinea(5,'X'));
+		String texto = creaLinea(10, 'E');
+		System.out.println(texto);
+	}
+	
+	public static void muestraNumero (int numero) {
+		 System.out.println((numero));
+		 
+	}
+	
+	public static String creaLinea(int veces, char caracter) {
+		
+		String cadena = "";
+		for(int i = 0; i<veces; i++)
+			cadena += caracter;
+		return cadena;
+
+		
+	}
+
+}

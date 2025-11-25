@@ -1,0 +1,18 @@
+
+package clase;
+import java.util.Scanner;
+public class Ejercicio_7_boletin_8 {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("Introduce un número para averiguar si es Armstrong o Narcisista: ");
+		
+		 num = teclado.nextInt();
+		
+	
+		teclado.close();
+		System.out.println(cifrado);
+
+	}
+
+}
